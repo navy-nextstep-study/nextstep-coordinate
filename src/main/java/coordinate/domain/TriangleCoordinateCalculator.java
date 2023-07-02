@@ -14,9 +14,10 @@ public class TriangleCoordinateCalculator implements CoordinateCalculator {
 
     @Override
     public double calculate() {
-        Point middle = firstPoint.calculateMiddle(secondPoint);
-        double height = middle.calculateDistanceBetween(thirdPoint);
-        double width = firstPoint.calculateDistanceBetween(secondPoint);
-        return height * width / 2;
+        double a = firstPoint.calculateDistanceBetween(secondPoint);
+        double b = secondPoint.calculateDistanceBetween(thirdPoint);
+        double c = thirdPoint.calculateDistanceBetween(firstPoint);
+        double s = (a + b + c) / 2;
+        return Math.sqrt(s * (s - a) * (s- b) * (s- c));
     }
 }

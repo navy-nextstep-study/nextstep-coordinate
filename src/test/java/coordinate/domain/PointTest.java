@@ -28,17 +28,4 @@ class PointTest {
         // then
         assertThat(result).isEqualTo(Math.sqrt(32), offset(0.00099));
     }
-
-    @Test
-    void 두_점_사이의_중간값을_계산한다() {
-        // given
-        Point point = new Point(0, 4);
-
-        // when
-        Point result = point.calculateMiddle(new Point(4, 0));
-
-        // then
-        assertThat(result.getX()).isEqualTo(2);
-        assertThat(result.getY()).isEqualTo(2);
-    }
 }

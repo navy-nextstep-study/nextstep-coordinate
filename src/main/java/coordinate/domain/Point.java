@@ -22,10 +22,6 @@ public class Point {
         return Math.sqrt(Math.pow(x - point.getX(), 2) + Math.pow(y - point.getY(), 2));
     }
 
-    public Point calculateMiddle(Point point) {
-        return new Point((x + point.getX()) / 2, (y + point.getY()) / 2);
-    }
-
     public double getX() {
         return x;
     }
