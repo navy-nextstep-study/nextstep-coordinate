@@ -1,8 +1,10 @@
 package domain;
 
+import java.util.List;
+
 public class LineFigure implements Figure {
 
-    Points points;
+    private final Points points;
 
     public LineFigure(Points points) {
         this.points = points;

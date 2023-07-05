@@ -5,8 +5,8 @@ public class Point {
     private final int MIN_RANGE_VALUE = 0;
     private final int MAX_RANGE_VALUE = 24;
 
-    private int x;
-    private int y;
+    private final int x;
+    private final int y;
 
     public Point(int x, int y) {
         validatePointRange(x, y);

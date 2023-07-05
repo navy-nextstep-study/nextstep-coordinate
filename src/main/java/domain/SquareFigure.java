@@ -2,7 +2,7 @@ package domain;
 
 public class SquareFigure implements Figure {
 
-    Points points;
+    private final Points points;
 
     public SquareFigure(Points points) {
         this.points = points;

@@ -2,7 +2,7 @@ package domain;
 
 public class TriangleFigure implements Figure {
 
-    Points points;
+    private final Points points;
 
     public TriangleFigure(Points points) {
         this.points = points;
