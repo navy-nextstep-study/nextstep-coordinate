@@ -20,6 +20,11 @@ public class TriangleFigure implements Figure {
         return calculateHeron(pointA, pointB, pointC);
     }
 
+    @Override
+    public String getResult() {
+        return "삼각형 넓이는 " + calculate();
+    }
+
     private Double calculateHeron(Point a, Point b, Point c) {
         Double aLength = a.calculateDistance(b);
         Double bLength = b.calculateDistance(c);

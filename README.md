@@ -2,9 +2,9 @@
 nextstep 좌표계산기를 OOP와 TDD를 이용하여 구현해보자.
 
 ## 기능 요구사항
-- [ ] 사용자가 점에 대한 좌표 정보를 입력하는 메뉴를 구성한다. InputView#inputCoordinate()
-- [ ] 사용자에게 좌표 정보를 입력받을지 확인한다. OutputView#displayInputCoordinateMsg()
-- [ ] 입력 범위를 초과할 경우 에러 문구를 출력하고 다시 입력을 받는다. OutputView#ErrorMsg();
+- [X] 사용자가 점에 대한 좌표 정보를 입력하는 메뉴를 구성한다. InputView#inputCoordinate()
+- [X] 사용자에게 좌표 정보를 입력받을지 확인한다. OutputView#displayInputCoordinateMsg()
+- [X] 입력 범위를 초과할 경우 에러 문구를 출력하고 다시 입력을 받는다. OutputView#displayErrorMsg();
 - [X] 좌표 정보는 괄호"(", ")"로 둘러쌓여 있으며 쉼표(,)로 x값과 y값을 구분한다.
 - [X] X, Y좌표 모두 최대 24까지만 입력할 수 있다. 0 <= X, Y <= 24 Point
 - [X] 좌표값과 좌표값 사이는 '-' 문자로 구분한다. 

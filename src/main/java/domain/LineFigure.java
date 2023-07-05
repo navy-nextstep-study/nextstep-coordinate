@@ -18,4 +18,10 @@ public class LineFigure implements Figure {
 
         return point1.calculateDistance(point2);
     }
+
+    @Override
+    public String getResult() {
+        Double result = calculate();
+        return "두 점 사이 거리는 " + result;
+    }
 }

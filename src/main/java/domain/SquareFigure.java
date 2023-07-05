@@ -17,8 +17,12 @@ public class SquareFigure implements Figure {
         if (!isRectangle()) {
             throw new IllegalArgumentException("직사각형이 아닙니다.");
         }
-
         return getArea();
+    }
+
+    @Override
+    public String getResult() {
+        return "사각형 넓이는 " + calculate();
     }
 
     private Double getArea() {
