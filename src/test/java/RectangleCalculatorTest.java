@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.nextstep.Point;
+import org.nextstep.Points;
 import org.nextstep.RectangleCalculator;
 
 import java.util.Arrays;
@@ -17,9 +18,8 @@ public class RectangleCalculatorTest {
         Point point3 = new Point(22, 18);
         Point point4 = new Point(10, 14);
 
-        List<Point> pointList = Arrays.asList(point1, point2, point3, point4);
-
-        assertThatThrownBy(() -> new RectangleCalculator(pointList))
+        Points points = new Points(Arrays.asList(point1, point2, point3, point4));
+        assertThatThrownBy(() -> new RectangleCalculator(points))
                 .isInstanceOf(IllegalStateException.class)
                 .hasMessage("직사각형이 아닙니다.");
     }
@@ -32,9 +32,9 @@ public class RectangleCalculatorTest {
         Point point3 = new Point(22, 18);
         Point point4 = new Point(10, 18);
 
-        List<Point> pointList = Arrays.asList(point1, point2, point3, point4);
+        Points points = new Points(Arrays.asList(point1, point2, point3, point4));
 
-        RectangleCalculator rectangleCalculator = new RectangleCalculator(pointList);
+        RectangleCalculator rectangleCalculator = new RectangleCalculator(points);
 
         double areaExpect = rectangleCalculator.calculate();
 

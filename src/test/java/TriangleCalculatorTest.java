@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.nextstep.Point;
+import org.nextstep.Points;
 import org.nextstep.TriangleCalculator;
 
 import java.util.Arrays;
@@ -22,8 +23,8 @@ public class TriangleCalculatorTest {
         Point point2 = new Point(10, 10);
         Point point3 = new Point(22, 18);
 
-        List<Point> pointList = Arrays.asList(point1, point2, point3);
-        assertThatThrownBy(() -> new TriangleCalculator(pointList))
+        Points points = new Points(Arrays.asList(point1, point2, point3));
+        assertThatThrownBy(() -> new TriangleCalculator(points))
                 .isInstanceOf(IllegalStateException.class)
                 .hasMessage("삼각형이 아닙니다.");
     }
@@ -36,8 +37,8 @@ public class TriangleCalculatorTest {
         Point point2 = new Point(10, 12);
         Point point3 = new Point(10, 18);
 
-        List<Point> pointList = Arrays.asList(point1, point2, point3);
-        assertThatThrownBy(() -> new TriangleCalculator(pointList))
+        Points points = new Points(Arrays.asList(point1, point2, point3));
+        assertThatThrownBy(() -> new TriangleCalculator(points))
                 .isInstanceOf(IllegalStateException.class)
                 .hasMessage("삼각형이 아닙니다.");
     }
@@ -49,8 +50,8 @@ public class TriangleCalculatorTest {
         Point point2 = new Point(14 , 15);
         Point point3 = new Point(20, 8);
 
-        List<Point> pointList = Arrays.asList(point1, point2, point3);
-        TriangleCalculator triangleCalculator = new TriangleCalculator(pointList);
+        Points points = new Points(Arrays.asList(point1, point2, point3));
+        TriangleCalculator triangleCalculator = new TriangleCalculator(points);
 
         double areaExpect = triangleCalculator.calculate();
 
