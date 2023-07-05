@@ -2,11 +2,8 @@ package domain;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PointTest {
 
@@ -23,6 +20,6 @@ class PointTest {
     @DisplayName("x와 y좌표는 0이상 24이하이면 정상적으로 생성된다.")
     void CreatePoint(int x, int y) {
         Assertions.assertThatCode(() -> new Point(x, y))
-                .doesNotThrowAnyException();
+            .doesNotThrowAnyException();
     }
 }

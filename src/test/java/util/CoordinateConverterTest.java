@@ -8,8 +8,6 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CoordinateConverterTest {
 
     @ParameterizedTest
@@ -23,5 +21,4 @@ class CoordinateConverterTest {
             .usingRecursiveFieldByFieldElementComparator()
             .contains(new Point(10, 10), new Point(14, 15));
     }
-
 }
