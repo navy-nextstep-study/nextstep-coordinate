@@ -5,13 +5,11 @@ import java.util.List;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
-public class Rectangle {
-
-    private final List<Point> points;
+public class Rectangle extends AbstractFigure {
 
     public Rectangle(List<Point> points) {
+        super(points);
         validationRectangle(points);
-        this.points = points;
     }
 
     private void validationRectangle(List<Point> points) {
@@ -25,15 +23,21 @@ public class Rectangle {
         }
     }
 
+    @Override
     public double getArea() {
-        double distance1 = points.get(0).calculateDistance(points.get(1));
-        double distance2 = points.get(0).calculateDistance(points.get(2));
-        double distance3 = points.get(0).calculateDistance(points.get(3));
+        double distance1 = getPoints().get(0).calculateDistance(getPoints().get(1));
+        double distance2 = getPoints().get(0).calculateDistance(getPoints().get(2));
+        double distance3 = getPoints().get(0).calculateDistance(getPoints().get(3));
 
         double width = getWidth(distance1, distance2, distance3);
         double height = getHeight(distance1, distance2, distance3);
 
         return width * height;
+    }
+
+    @Override
+    public String getAreaInfo() {
+        return "사각형 넓이는 " + getArea();
     }
 
     private double getWidth(double distance1, double distance2, double distance3) {

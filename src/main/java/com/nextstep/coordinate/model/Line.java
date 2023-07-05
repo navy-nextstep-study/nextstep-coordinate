@@ -2,15 +2,19 @@ package com.nextstep.coordinate.model;
 
 import java.util.List;
 
-public class Line {
-
-    private final List<Point> points;
+public class Line extends AbstractFigure {
 
     public Line(List<Point> points) {
-        this.points = points;
+        super(points);
     }
 
+    @Override
     public double getArea() {
-        return points.get(0).calculateDistance(points.get(1));
+        return getPoints().get(0).calculateDistance(getPoints().get(1));
+    }
+
+    @Override
+    public String getAreaInfo() {
+        return "두 점 사이 거리는 " + getArea();
     }
 }

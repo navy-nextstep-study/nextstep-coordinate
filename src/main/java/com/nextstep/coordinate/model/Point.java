@@ -12,6 +12,14 @@ public class Point {
         this.y = new Coordinate(y);
     }
 
+    public int getX() {
+        return x.getValue();
+    }
+
+    public int getY() {
+        return y.getValue();
+    }
+
     public double calculateDistance(Point point) {
         return sqrt(getPow(this.x.getValue(), point.x.getValue()) + getPow(this.y.getValue(), point.y.getValue()));
     }
