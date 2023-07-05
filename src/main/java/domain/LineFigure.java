@@ -12,6 +12,13 @@ public class LineFigure implements Figure {
 
     @Override
     public Double calculate() {
-        return null;
+        List<Point> pointList = points.getPoints();
+        Point point1 = pointList.get(0);
+        Point point2 = pointList.get(1);
+
+        double xLength = Math.pow(point1.getX() - point2.getX(), 2);
+        double yLength = Math.pow(point1.getY() - point2.getY(), 2);
+
+        return Math.sqrt(xLength + yLength);
     }
 }

@@ -14,6 +14,14 @@ public class Point {
         this.y = y;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     private void validatePointRange(int x, int y) {
         if (axisOutOfRange(x) || axisOutOfRange(y)) {
             throw new IllegalArgumentException("x와 y의 좌표는 0이상 24이하여야 합니다.");
