@@ -19,15 +19,29 @@ public class ConsoleApplication {
         if (coordinatesList.size() == LINE) {
             OutputView.coordinatePlace(coordinatesList);
             Line line = new Line(coordinatesList.get(0), coordinatesList.get(1));
+
             OutputView.lineLengthGuide(line.getLineLength());
         }
 
         if (coordinatesList.size() == TRIANGLE) {
             OutputView.coordinatePlace(coordinatesList);
+            Line a = new Line(coordinatesList.get(0), coordinatesList.get(1));
+            Line b = new Line(coordinatesList.get(1), coordinatesList.get(2));
+            Line c = new Line(coordinatesList.get(0), coordinatesList.get(2));
+
+            Triangle triangle = new Triangle(a, b, c);
+
+            OutputView.triangleAreaGuide(triangle.getArea());
         }
 
         if (coordinatesList.size() == SQUARE) {
             OutputView.coordinatePlace(coordinatesList);
+            Line width = new Line(coordinatesList.get(0), coordinatesList.get(1));
+            Line height = new Line(coordinatesList.get(1), coordinatesList.get(2));
+
+            Square square = new Square(width, height);
+
+            OutputView.squareAreaGuide(square.getArea());
         }
     }
 }
