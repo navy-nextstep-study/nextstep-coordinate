@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.nextstep.Point;
-import org.nextstep.Points;
-import org.nextstep.RectangleCalculator;
+import org.nextstep.domain.Point;
+import org.nextstep.domain.Points;
+import org.nextstep.domain.RectangleCalculator;
 
 import java.util.Arrays;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
