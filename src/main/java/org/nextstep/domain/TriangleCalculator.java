@@ -1,6 +1,8 @@
-package org.nextstep;
+package org.nextstep.domain;
 
-import org.nextstep.Point;
+import org.nextstep.domain.Calculator;
+import org.nextstep.domain.Point;
+import org.nextstep.domain.Points;
 
 import java.util.List;
 

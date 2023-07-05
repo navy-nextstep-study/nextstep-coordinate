@@ -1,4 +1,4 @@
-package org.nextstep;
+package org.nextstep.domain;
 
 public class Point {
 

@@ -1,6 +1,9 @@
-package org.nextstep;
+package org.nextstep.domain;
 
-import java.util.Comparator;
+import org.nextstep.domain.Calculator;
+import org.nextstep.domain.Point;
+import org.nextstep.domain.Points;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 

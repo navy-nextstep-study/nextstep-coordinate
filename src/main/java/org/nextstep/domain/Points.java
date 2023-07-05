@@ -1,4 +1,6 @@
-package org.nextstep;
+package org.nextstep.domain;
+
+import org.nextstep.domain.Point;
 
 import java.util.Collections;
 import java.util.List;
