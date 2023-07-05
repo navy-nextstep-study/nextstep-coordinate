@@ -4,11 +4,11 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class CoordindateTest {
+public class CoordinateTest {
 
     @Test
     @DisplayName("좌표를 생성한다.")
-    void createCoordinate(){
+    void createCoordinate() {
         // given
         Coordinate coordinate = new Coordinate(10, 23);
 
