@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.*;
 public class RectangleCalculatorTest {
     @Test
     @DisplayName("마름모나 사다리꼴은 허용하지 않으며 오직 직사각형만 허용한다. - 실패")
-    void checkValidRectangle_ExceptionThrown() {
+    void CheckValidRectangle_ExceptionThrown() {
         Point point1 = new Point(10, 10);
         Point point2 = new Point(22, 10);
         Point point3 = new Point(22, 18);
