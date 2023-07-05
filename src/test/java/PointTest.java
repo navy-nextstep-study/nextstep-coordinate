@@ -4,8 +4,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.nextstep.Point;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.*;
 
 public class PointTest {
     @Test
@@ -24,5 +23,16 @@ public class PointTest {
         assertThatThrownBy(() -> new Point(x, y))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("좌표가 범위를 벗어났습니다.");
+    }
+
+    @Test
+    @DisplayName("두 좌표간의 범위를 계산한다.")
+    void Calcualte_Distance(){
+        //given
+        Point point1 = new Point(2,4);
+        //when
+        double result = point1.calculateDistance(new Point(4,0));
+        //then
+        assertThat(result).isEqualTo(Math.sqrt(20),offset(0.00099));
     }
 }
