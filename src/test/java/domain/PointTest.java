@@ -1,7 +1,9 @@
 package domain;
 
 import org.assertj.core.api.Assertions;
+import org.assertj.core.data.Offset;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -21,5 +23,16 @@ class PointTest {
     void CreatePoint(int x, int y) {
         Assertions.assertThatCode(() -> new Point(x, y))
             .doesNotThrowAnyException();
+    }
+
+    @Test
+    @DisplayName("두 포인트 간의 길이를 구한다.")
+    void calculateDistanceTest() {
+        Point pointA = new Point(10, 10);
+        Point pointB = new Point(14, 15);
+
+        Double result = pointA.calculateDistance(pointB);
+
+        Assertions.assertThat(result).isEqualTo(6.403124, Offset.offset(0.000009));
     }
 }
