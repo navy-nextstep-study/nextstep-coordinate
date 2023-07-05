@@ -36,11 +36,14 @@
 
 ## 구현
 
-선
+### 선
+
 ![스크린샷 2023-07-05 오후 7 06 02](https://github.com/Hchanghyeon/nextstep-coordinate/assets/92444744/d731a389-5d16-434f-9cdb-31299df7aa98)
 
-사각형
+### 사각형
+
 ![스크린샷 2023-07-05 오후 7 06 20](https://github.com/Hchanghyeon/nextstep-coordinate/assets/92444744/31374d6c-69e0-4f9d-9078-9d0a1cc063fe)
 
-삼각형
+### 삼각형
+
 ![스크린샷 2023-07-05 오후 7 06 35](https://github.com/Hchanghyeon/nextstep-coordinate/assets/92444744/04c7d7a6-49e8-4556-87ec-1139ef9bef73)
