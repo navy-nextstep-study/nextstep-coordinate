@@ -14,7 +14,7 @@ public class LineTest {
     @ParameterizedTest
     @CsvSource(value = {"1, 1.414", "2, 2.828"})
     @DisplayName("직선의 길이를 계산한다.")
-    void test(int value, double expected) {
+    void getArea(int value, double expected) {
         // given
         Point point1 = new Point(0, 0);
         Point point2 = new Point(value, value);
