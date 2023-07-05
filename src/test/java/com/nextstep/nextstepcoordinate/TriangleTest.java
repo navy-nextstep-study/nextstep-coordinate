@@ -3,6 +3,9 @@ package com.nextstep.nextstepcoordinate;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.data.Offset.offset;
 
+import com.nextstep.nextstepcoordinate.domain.Coordinate;
+import com.nextstep.nextstepcoordinate.domain.Line;
+import com.nextstep.nextstepcoordinate.domain.Triangle;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

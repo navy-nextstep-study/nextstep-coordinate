@@ -1,4 +1,4 @@
-package com.nextstep.nextstepcoordinate;
+package com.nextstep.nextstepcoordinate.domain;
 
 import java.text.MessageFormat;
 
@@ -16,12 +16,12 @@ public class Coordinate {
         this.y = y;
     }
 
-    private void validateCoordinateRange(int x, int y){
-        if(COORDINATE_MIN > x || x > COORDINATE_MAX){
+    private void validateCoordinateRange(int x, int y) {
+        if (COORDINATE_MIN > x || x > COORDINATE_MAX) {
             throw new IllegalArgumentException(MessageFormat.format("입력하신 X좌표 {0}는 입력값의 범위에 포함되지 않습니다.", x));
         }
 
-        if(COORDINATE_MIN > y || y > COORDINATE_MAX){
+        if (COORDINATE_MIN > y || y > COORDINATE_MAX) {
             throw new IllegalArgumentException(MessageFormat.format("입력하신 Y좌표 {0}는 입력값의 범위에 포함되지 않습니다.", y));
         }
     }

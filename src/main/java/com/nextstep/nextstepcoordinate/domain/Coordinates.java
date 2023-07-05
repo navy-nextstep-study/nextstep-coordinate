@@ -1,6 +1,5 @@
-package com.nextstep.nextstepcoordinate.Console;
+package com.nextstep.nextstepcoordinate.domain;
 
-import com.nextstep.nextstepcoordinate.Coordinate;
 import java.util.ArrayList;
 import java.util.List;
 

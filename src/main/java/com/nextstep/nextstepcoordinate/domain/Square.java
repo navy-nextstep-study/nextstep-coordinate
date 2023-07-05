@@ -1,4 +1,4 @@
-package com.nextstep.nextstepcoordinate;
+package com.nextstep.nextstepcoordinate.domain;
 
 public class Square {
 

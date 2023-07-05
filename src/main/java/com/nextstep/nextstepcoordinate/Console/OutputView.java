@@ -1,6 +1,6 @@
 package com.nextstep.nextstepcoordinate.Console;
 
-import com.nextstep.nextstepcoordinate.Coordinate;
+import com.nextstep.nextstepcoordinate.domain.Coordinate;
 import java.util.List;
 
 public class OutputView {

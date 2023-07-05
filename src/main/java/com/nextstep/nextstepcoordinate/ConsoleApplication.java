@@ -1,8 +1,12 @@
 package com.nextstep.nextstepcoordinate;
 
-import com.nextstep.nextstepcoordinate.Console.Coordinates;
 import com.nextstep.nextstepcoordinate.Console.InputView;
 import com.nextstep.nextstepcoordinate.Console.OutputView;
+import com.nextstep.nextstepcoordinate.domain.Coordinate;
+import com.nextstep.nextstepcoordinate.domain.Coordinates;
+import com.nextstep.nextstepcoordinate.domain.Line;
+import com.nextstep.nextstepcoordinate.domain.Square;
+import com.nextstep.nextstepcoordinate.domain.Triangle;
 import java.util.List;
 
 public class ConsoleApplication {

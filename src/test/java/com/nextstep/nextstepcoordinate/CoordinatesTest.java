@@ -2,7 +2,8 @@ package com.nextstep.nextstepcoordinate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.nextstep.nextstepcoordinate.Console.Coordinates;
+import com.nextstep.nextstepcoordinate.domain.Coordinate;
+import com.nextstep.nextstepcoordinate.domain.Coordinates;
 import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
