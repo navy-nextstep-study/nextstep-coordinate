@@ -20,12 +20,28 @@ public class RectangleCalculator implements Calculator {
         List<Point> pointList = points.getPoints();
 
         // x 좌표의 최소/최대값 구하기
-        int minX = pointList.stream().mapToInt(Point::getX).min().orElseThrow(NoSuchElementException::new);
-        int maxX = pointList.stream().mapToInt(Point::getX).max().orElseThrow(NoSuchElementException::new);
+        int minX = pointList
+                .stream()
+                .mapToInt(Point::getX)
+                .min()
+                .orElseThrow(NoSuchElementException::new);
+        int maxX = pointList
+                .stream()
+                .mapToInt(Point::getX)
+                .max()
+                .orElseThrow(NoSuchElementException::new);
 
         // y 좌표의 최소/최대값 구하기
-        int minY = pointList.stream().mapToInt(Point::getY).min().orElseThrow(NoSuchElementException::new);
-        int maxY = pointList.stream().mapToInt(Point::getY).max().orElseThrow(NoSuchElementException::new);
+        int minY = pointList
+                .stream()
+                .mapToInt(Point::getY)
+                .min()
+                .orElseThrow(NoSuchElementException::new);
+        int maxY = pointList
+                .stream()
+                .mapToInt(Point::getY)
+                .max()
+                .orElseThrow(NoSuchElementException::new);
 
         double width = maxX - minX;
         double height = maxY - minY;
