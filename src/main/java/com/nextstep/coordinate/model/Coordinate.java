@@ -14,4 +14,8 @@ public class Coordinate {
             throw new IllegalArgumentException("좌표는 0 이상 24 이하의 값만 가질 수 있습니다.");
         }
     }
+
+    public int getValue() {
+        return value;
+    }
 }
