@@ -3,7 +3,7 @@ package org.nextstep;
 import java.util.Comparator;
 import java.util.List;
 
-public class RectangleCalculator {
+public class RectangleCalculator implements Calculator{
     private final List<Point> pointList;
 
     public RectangleCalculator(List<Point> pointList) {
@@ -11,6 +11,7 @@ public class RectangleCalculator {
         this.pointList = pointList;
     }
 
+    @Override
     public double calculate() {
         pointList.sort(Comparator.comparing(Point::getX)); //x 좌표 기준으로 오름차순 정렬
         Point leftPoint = pointList.get(0);

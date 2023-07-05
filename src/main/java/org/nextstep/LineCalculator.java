@@ -1,6 +1,8 @@
 package org.nextstep;
 
-public class LineCalculator {
+import jdk.jfr.Category;
+
+public class LineCalculator implements Calculator{
     private final Point point1;
     private final Point point2;
 
@@ -8,6 +10,7 @@ public class LineCalculator {
         this.point1 = point1;
         this.point2 = point2;
     }
+    @Override
     public double calculate() {
         return point1.calculateDistance(point2);
     }
