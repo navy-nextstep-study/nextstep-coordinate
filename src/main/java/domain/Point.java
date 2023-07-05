@@ -22,6 +22,13 @@ public class Point {
         return y;
     }
 
+    public Double calculateDistance(Point point) {
+        double xLength = Math.pow(this.getX() - point.getX(), 2);
+        double yLength = Math.pow(this.getY() - point.getY(), 2);
+
+        return Math.sqrt(xLength + yLength);
+    }
+
     private void validatePointRange(int x, int y) {
         if (axisOutOfRange(x) || axisOutOfRange(y)) {
             throw new IllegalArgumentException("x와 y의 좌표는 0이상 24이하여야 합니다.");

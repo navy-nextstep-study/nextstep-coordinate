@@ -16,9 +16,6 @@ public class LineFigure implements Figure {
         Point point1 = pointList.get(0);
         Point point2 = pointList.get(1);
 
-        double xLength = Math.pow(point1.getX() - point2.getX(), 2);
-        double yLength = Math.pow(point1.getY() - point2.getY(), 2);
-
-        return Math.sqrt(xLength + yLength);
+        return point1.calculateDistance(point2);
     }
 }
