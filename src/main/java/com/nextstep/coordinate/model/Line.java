@@ -6,6 +6,13 @@ public class Line extends AbstractFigure {
 
     public Line(List<Point> points) {
         super(points);
+        validationLine(points);
+    }
+
+    private void validationLine(List<Point> points) {
+        if (points.get(0).getX() == points.get(1).getX() && points.get(0).getY() == points.get(1).getY()) {
+            throw new IllegalArgumentException("두 점이 직선이여야 합니다.");
+        }
     }
 
     @Override
