@@ -27,12 +27,12 @@ public class PointTest {
 
     @Test
     @DisplayName("두 좌표간의 범위를 계산한다.")
-    void Calcualte_Distance(){
+    void Calcualte_Distance() {
         //given
-        Point point1 = new Point(2,4);
+        Point point1 = new Point(2, 4);
         //when
-        double result = point1.calculateDistance(new Point(4,0));
+        double result = point1.calculateDistance(new Point(4, 0));
         //then
-        assertThat(result).isEqualTo(Math.sqrt(20),offset(0.00099));
+        assertThat(result).isEqualTo(Math.sqrt(20), offset(0.00099));
     }
 }

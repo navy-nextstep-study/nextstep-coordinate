@@ -44,9 +44,9 @@ public class TriangleCalculatorTest {
 
     @Test
     @DisplayName("삼각형의 면적을 계산한다.")
-    void Calculate_Triangle_Area(){
+    void Calculate_Triangle_Area() {
         Point point1 = new Point(10, 10);
-        Point point2 = new Point(14 , 15);
+        Point point2 = new Point(14, 15);
         Point point3 = new Point(20, 8);
 
         Points points = new Points(Arrays.asList(point1, point2, point3));
@@ -54,7 +54,7 @@ public class TriangleCalculatorTest {
 
         double areaExpect = triangleCalculator.calculate();
 
-        assertThat(areaExpect).isEqualTo(29,offset(0.00099));
+        assertThat(areaExpect).isEqualTo(29, offset(0.00099));
     }
 
 }

@@ -6,10 +6,12 @@ public enum ShapeType {
     RECTANGLE(4);
 
     private final int count;
+
     ShapeType(int count) {
         this.count = count;
     }
-    public int getCount(){
+
+    public int getCount() {
         return count;
     }
 }
